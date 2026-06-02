@@ -16,11 +16,11 @@ if api_key:
     st.divider()
 
     # 2. 사용자 입력 섹션 (요청하신 항목들로 세분화)
-    wholesale_url = st.text_input("1. 도매 사이트 상품 상세페이지 URL")
+    wholesale_url = st.text_input("1. 도매 사이트 상품 상세페이지 URL (텍스트 읽기용 _ 라엠코리아 사이트 주소 삽입")
     product_type = st.text_input("2. 제품 종류", placeholder="예: 캡나시, 골지 브라팬티 세트, 차가브라 등")
     material_info = st.text_area("3. 제품 소재 정보", placeholder="예: 하이텐션 소프트 스트레치, 나일론 80%, 스판 20% 등")
     extra_info = st.text_area("4. MD 실착 테스트 및 디테일 설명 (필수 ⭐)", placeholder="예: 패드가 빠지지 않음, 셔링으로 뱃살 커버 등 직접 발견한 디테일을 적어주세요.")
-    uploaded_files = st.file_uploader("5. 직접 촬영한 디테일/테스트 사진 (다중 선택 가능)", type=["jpg", "png", "jpeg"], accept_multiple_files=True)
+    uploaded_files = st.file_uploader("5. 착용/디테일 사진 (이미지 읽기용 _ 신상마켓 사이트 캡쳐 및 직접 촬영)", type=["jpg", "png", "jpeg"], accept_multiple_files=True)
     
     # 💡 딱 하나 추가된 입력 칸: 타사 단점
     competitor_reviews = st.text_area("6. 타사 베스트셀러 단점 / 1점 리뷰 (선택사항 💡)", placeholder="예: 캡이 붕 떠서 옷 태가 안 살아요, 어깨끈이 너무 얇아서 살을 파고듦 등")
